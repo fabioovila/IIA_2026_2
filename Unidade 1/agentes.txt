@@ -1,0 +1,17 @@
+um agente é uma entidade cuja finalidade é solucionar um problema através de um método de raciocínio
+    capta estímulos, processa internamente e faz ação que reverbera sobre o ambiente
+    f: P* -> A
+        (sequência de percepções(P*) ativa uma determinada ação(A))
+
+agentes mal programados se tornam ???? irracionais
+heurística -> forma de programação que resolva de forma mais simplísta o possível
+
+agentes racionais - medida de desempenho (do agente?) - criterio de sucesso 
+racionalidade nesse contexto tá relacionado à medida de cumprimento do problema apresentado
+
+ajustes na medida de desempenho é uma constante na área
+
+o primeiro e mais importante passo é especicifar o ambiente de tarefa 
+    tabela PEAS - medida de performance, ambiente, atuadores, sensores
+    outras propriedades: estático/dinamico, discreto/contínuo, conhecido/desconhecido, deterministico/estocastico, episodico/sequencial
+
