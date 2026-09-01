@@ -1,6 +1,7 @@
 busca informada - busca heurística(solucao simplificada que atende a cenarios onde nao se possui todas as informações a respeito)
     h(n) = custo estimado do caminho mais barato do estado nó n para o estado do objetivo
     assume ambientes totalmente observáveis, determinísticos e estáticos
+    
     busca BFS gulosa(greedy) -> expande para o nó que parece estar mais próximo do objetivo
         melhor -> f(n) = h(n)
         o algoritmo selecionará o nó que for mais barato a ser explorado
