@@ -1,0 +1,18 @@
+busca informada - busca heurística(solucao simplificada que atende a cenarios onde nao se possui todas as informações a respeito)
+    h(n) = custo estimado do caminho mais barato do estado nó n para o estado do objetivo
+    assume ambientes totalmente observáveis, determinísticos e estáticos
+    busca BFS gulosa(greedy) -> expande para o nó que parece estar mais próximo do objetivo
+        melhor -> f(n) = h(n)
+        o algoritmo selecionará o nó que for mais barato a ser explorado
+        mistura de BFS com DFS? Vê todos disponíveis e vai para o mais barato recursivamente até chegar no objetivo
+        em python usa função anonima(lambda) pra fazer o sort dos valores
+        utiliza PILHA, tá mais próximo de busca em profundidade com uma etapa em largura com ordenação
+        a heurística tem que estar muito próxima à realidade, um parâmetro errado pode complicar o algoritmo
+
+    busca A* -> escolhe o nó somando a valor de custo real para ir até o nó + a distância heurística para chegar no objetivo
+        f(n) = g(n) + h(n)
+            os valores DEVEM SER POSITIVOS
+        g(n) é o custo real do caminho escolhido até o nó n atual, h(n) é o quanto ainda falta andar do nó n atual até o nó objetivo
+        exige uma heurística admissível para que f(n) nunca superestime o custo da melhor solução de n
+        ideia de projeto 3a und = benchmark entre algoritmos de busca num cenário que dá pra escalar em termo de complexidade (ex: escalar cidades, dps estados, dps regiao, etc)
+        
